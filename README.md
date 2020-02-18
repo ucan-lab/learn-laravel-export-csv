@@ -1,9 +1,15 @@
-# docker-laravel
+# laravel-csv-example
 
-Build Laravel's development environment using docker.
-PHP7.4/MySQL8.0/nginx/redis/node
+```
+$ git clone git@github.com:ucan-lab/learn-laravel-export-csv.git
+$ cd learn-laravel-export-csv
+$ make install
+$ make app
+$ php artisan migrate:fresh --seed
 
-## Build
+# Output csv file
+$ php artisan export:user
 
-- [Build for Mac](https://github.com/ucan-lab/docker-laravel/wiki/Build-for-Mac)
-- [Build for Windows](https://github.com/ucan-lab/docker-laravel/wiki/Build-for-Windows)
+# Execute testing
+$ ./vendor/bin/phpunit
+```
